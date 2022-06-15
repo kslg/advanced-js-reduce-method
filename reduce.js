@@ -6,6 +6,24 @@
 
 
 // Summing an array of numbers:
+const nums = [0, 1, 2, 3, 4];
+  // The parameters the callback function takes are typically called acc,  for accumulator, and curr for current value.  
+let sum = nums.reduce((acc, curr) => acc + curr, 0); // explicitly specifying the initial value of zero.
+console.log(sum);
+
+const numsTwo = [0, 1, 2, 3, 4];
+let sumTwo = numsTwo.reduce((acc, curr) => {
+  console.log(
+    "Accumulator:", acc,
+    "Current Value:", curr,
+    "Total:", acc + curr
+  );
+    return acc + curr;
+  // explicitly specifying the initial value of zero.  
+  }, 0);
+console.log(sumTwo)
+
+
 
 
 const teamMembers = [
